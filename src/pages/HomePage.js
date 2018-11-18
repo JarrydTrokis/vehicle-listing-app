@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import Heading from '@components/Heading'
 
 class HomePage extends Component {
   render () {
     return (
       <div>
-        Home Page
+        <Heading level={1}>Home page</Heading>
       </div>
     )
   }

@@ -6,7 +6,7 @@ class AboutPage extends Component {
     return (
       <div>
         <h1>This is listing page</h1>
-        <Link to='/:vehicleId'>Go to vehicle</Link>
+        <Link to='/vehicles/:vehicleId'>Go to vehicle</Link>
       </div>
     )
   }
