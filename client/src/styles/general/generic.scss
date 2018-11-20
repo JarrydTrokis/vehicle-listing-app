@@ -1,0 +1,44 @@
+:root {
+    // Generic Colours
+  --white: #ffffff;
+  --off-white: #f2f2f2;
+  // Brand Colours
+  --brand-red: #e85151;
+  --brand-pink: #e400e4;
+  --brand-green: #51e872;
+  --brand-black: #464748;
+  --brand-light: #ced9e0;
+  --brand-grey: #c4c4c4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-color: var(--off-white);
+  color: var(--brand-black);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 3.998em;
+}
+
+h2 {
+  font-size: 2.827em;
+}
+
+h3 {
+  font-size: 1.999em;
+}
+
+h4 {
+  font-size: 1.414em;
+}
+
+small {
+  font-size: 0.707em;
+}
