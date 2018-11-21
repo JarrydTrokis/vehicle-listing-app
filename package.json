@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "client": "cd client && npm start",
+    "client:install": "cd client && npm install",
     "server": "cd server && npm start",
-    "start": "concurrently --kill-others \"npm run client\" \"npm run server\""
+    "server:install": "cd server && npm install",
+    "start": "concurrently --kill-others \"npm run client\" \"npm run server\"",
+    "postinstall": "concurrently \"npm run client:install\" \"npm run server:install\""
   },
   "repository": {
     "type": "git",

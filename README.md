@@ -16,5 +16,5 @@ An application, created using the following technologies:
 1) Pull the repo
 2) `yarn/npm install` - I prefer yarn, due to it's speed. 🔥
 3) `yarn start`
-4) Check that the application is running. (Default port is `localhost: 3000)
+4) Check that the application is running. (Default client application port is `localhost: 1234`)
 5) Enjoy using the app! 😎

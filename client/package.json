@@ -4,8 +4,8 @@
   "description": "A small application used to list and view vehicles retrieved from an API.",
   "main": "index.js",
   "scripts": {
-    "start": "parcel --no-hmr index.html --no-cache",
-    "build": "parcel build index.html --no-cache"
+    "start": "npx parcel --no-hmr index.html --no-cache",
+    "build": "npx parcel build index.html --no-cache"
   },
   "proxy": "http://localhost:5000",
   "author": "Jarryd Trokis",
@@ -33,6 +33,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "parcel-bundler": "^1.10.3",
+    "sass": "^1.15.1",
     "standard": "^10.0.3"
   }
 }
