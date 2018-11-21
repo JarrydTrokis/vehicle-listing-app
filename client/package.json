@@ -7,7 +7,7 @@
     "start": "npx parcel --no-hmr index.html --no-cache",
     "build": "npx parcel build index.html --no-cache"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "http://localhost:5000/",
   "author": "Jarryd Trokis",
   "license": "ISC",
   "dependencies": {

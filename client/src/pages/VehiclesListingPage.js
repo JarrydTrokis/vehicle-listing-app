@@ -12,17 +12,19 @@ class VehicleListingPage extends Component {
   }
 
   componentDidMount () {
-    fetch('/api/vehicles')
+    fetch('http://localhost:5000/api/vehicles')
       .then(res => res.json())
-      .then(this.setState(res => ({ vehicles: res })))
+      .then(vehicles => this.setState({ vehicles }))
       .catch(e => console.log(e))
   }
 
   render () {
     return (
       <Container>
-        <Heading level={1}>This is listing page</Heading>
-        {this.state.vehicles.map(vehicle => <p>{vehicle.id}</p>)}
+        <Heading level={1}>This is the listing page</Heading>
+        {this.state.vehicles.map(vehicle => (
+          <p key={vehicle.id}>{vehicle.vehicleCapDetails.capModelName}</p>
+        ))}
       </Container>
     )
   }
