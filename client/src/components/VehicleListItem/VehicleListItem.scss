@@ -1,15 +1,29 @@
 .vehicle-list-item {
-    display: flex;
-    align-items: flex-start;
-    flex: 1 0 auto;
-    padding: 5px 8px;
-    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  display: flex;
+  background-color: var(--white);
+  align-items: flex-start;
+  flex: 1 0 auto;
+  padding: 1em 1.4em;
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  transition: box-shadow, transform 0.3s ease-in-out;
+  margin-bottom: 1em;
+  text-decoration: none;
+  color: var(--brand-black);
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,0.1);
+    transform: scale(1.05);
+  }
+  &:visited {
+    color: var(--brand-blue)
+  }
+}
 
-    & img {
-        margin-right: 1em;
-    }
+.media-figure {
+  max-width: 160px;
+  margin-right: 1em;
 }
 
 .media {
-    flex: 1;
+  flex: 1;
 }

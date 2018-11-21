@@ -21,7 +21,8 @@
         "alias": {
           "@components": "./src/components",
           "@pages": "./src/pages",
-          "@layout": "./src/layout"
+          "@layout": "./src/layout",
+          "@helpers": "./src/helpers"
         }
       }
     ]

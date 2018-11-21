@@ -4,6 +4,7 @@
   --off-white: #f2f2f2;
   // Brand Colours
   --brand-red: #e85151;
+  --brand-blue: #5181e8;
   --brand-pink: #e400e4;
   --brand-green: #51e872;
   --brand-black: #464748;
@@ -41,4 +42,10 @@ h4 {
 
 small {
   font-size: 0.707em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }

@@ -29,6 +29,7 @@ class VehicleListingPage extends Component {
                   imageSrc={vehicle.displayImage && vehicle.displayImage.large}
                   year={vehicle.year}
                   modelName={vehicle.vehicleCapDetails.capModelName}
+                  description={vehicle.autotraderDescription}
                 />
               </li>
             ))}
