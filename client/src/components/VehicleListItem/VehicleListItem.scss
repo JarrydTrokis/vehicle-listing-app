@@ -1,0 +1,15 @@
+.vehicle-list-item {
+    display: flex;
+    align-items: flex-start;
+    flex: 1 0 auto;
+    padding: 5px 8px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+
+    & img {
+        margin-right: 1em;
+    }
+}
+
+.media {
+    flex: 1;
+}
