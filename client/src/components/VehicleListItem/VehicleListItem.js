@@ -5,7 +5,7 @@ import './VehicleListItem.scss'
 
 class VehicleListItem extends Component {
   render () {
-    const { id, imageSrc, modelName, description, year } = this.props
+    const { id, imageSrc, modelName, autotraderDescription, year } = this.props
     return (
       <Link styleName='vehicle-list-item' to={`/vehicles/${id}`}>
         <img
@@ -21,8 +21,8 @@ class VehicleListItem extends Component {
           <Heading level={3}>{`${year} ${modelName}`}</Heading>
           <p>
             {
-              description.length > 0
-              ? description
+              autotraderDescription.length > 0
+              ? autotraderDescription
               : `This vehicle needs no description - it's simply a must see!`
             }
           </p>

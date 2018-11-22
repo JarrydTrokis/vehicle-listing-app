@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
+import Vehicle from '@components/Vehicle'
+import { VehicleConsumer } from '../providers/VehicleProvider'
 
 class VehiclePage extends Component {
   render () {
     return (
-      <div>
-        <h1>This is vehicle page</h1>
-        <h2>Vehicle ID is: {`${this.props.match.params.vehicleId}`}</h2>
-      </div>
+      <VehicleConsumer>
+        {({ state }) => {
+          const currentVehicle = state.vehicles.find(v => v.id.toString() === this.props.match.params.vehicleId)
+          return <Vehicle {...currentVehicle} />
+        }}
+      </VehicleConsumer>
     )
   }
 }

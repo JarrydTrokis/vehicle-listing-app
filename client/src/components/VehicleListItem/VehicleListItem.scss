@@ -3,6 +3,7 @@
   background-color: var(--white);
   align-items: flex-start;
   flex: 1 0 auto;
+  flex-wrap: wrap;
   padding: 1em 1.4em;
   box-shadow: 0 0 3px rgba(0,0,0,0.1);
   transition: box-shadow, transform 0.3s ease-in-out;
@@ -20,8 +21,12 @@
 }
 
 .media-figure {
-  max-width: 160px;
-  margin-right: 1em;
+  width: 100%;
+  height: auto;
+  @media screen and (min-width: 600px) {
+    max-width: 160px;
+    margin-right: 1em;
+  }
 }
 
 .media {
