@@ -1,4 +1,4 @@
-# Carshop Dev Test
+# Vehicle Viewing App
 An application, created using the following technologies:
 
 * **React** - My preferred choice of front-end framework. The community is large and stable and the tools that are used in the React ecosystem are familiar to me.
