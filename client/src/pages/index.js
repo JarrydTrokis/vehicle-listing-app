@@ -1,6 +1,6 @@
-import HomePage from './HomePage'
-import VehiclesListingPage from './VehiclesListingPage'
-import VehiclePage from './VehiclePage'
+import HomePage from './HomePage/HomePage'
+import VehiclesListingPage from './VehicleListingPage/VehicleListingPage'
+import VehiclePage from './VehiclePage/VehiclePage'
 import PageNotFoundPage from './PageNotFoundPage'
 
 export {

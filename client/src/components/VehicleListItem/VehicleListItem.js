@@ -3,7 +3,13 @@ import { Link } from 'react-router-dom'
 import Heading from '@components/Heading'
 import './VehicleListItem.scss'
 
+const fallBackImagePath = '//images.carshop.co.uk/no_image/no_image_L.jpg'
+
 class VehicleListItem extends Component {
+  static defaultProps = {
+    imageSrc: fallBackImagePath
+  }
+
   render () {
     const { id, imageSrc, modelName, autotraderDescription, year } = this.props
     return (
@@ -14,7 +20,7 @@ class VehicleListItem extends Component {
           alt={modelName}
           onError={e => {
             e.target.onerror = null
-            e.target.src = '//images.carshop.co.uk/no_image/no_image_L.jpg'
+            e.target.src = fallBackImagePath
           }}
         />
         <div styleName='media'>
@@ -30,11 +36,6 @@ class VehicleListItem extends Component {
       </Link>
     )
   }
-}
-
-VehicleListItem.defaultProps = {
-  vehicleDescription: 'A used vehicle for sale',
-  defaultImage: '//images.carshop.co.uk/no_image/no_image_L.jpg'
 }
 
 export default VehicleListItem

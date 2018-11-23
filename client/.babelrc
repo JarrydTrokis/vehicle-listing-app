@@ -22,7 +22,9 @@
           "@components": "./src/components",
           "@pages": "./src/pages",
           "@layout": "./src/layout",
-          "@helpers": "./src/helpers"
+          "@helpers": "./src/helpers",
+          "@images": "./src/images",
+          "@providers": "./src/providers"
         }
       }
     ]
