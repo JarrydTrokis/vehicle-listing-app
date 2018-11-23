@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import { toGbp } from '@helpers/toGbp'
 import Heading from '@components/Heading'
 import './VehicleListItem.scss'
 
@@ -11,7 +12,7 @@ class VehicleListItem extends Component {
   }
 
   render () {
-    const { id, imageSrc, modelName, autotraderDescription, year } = this.props
+    const { id, imageSrc, modelName, autotraderDescription, year, vehiclePrice } = this.props
     return (
       <Link styleName='vehicle-list-item' to={`/vehicles/${id}`}>
         <img
@@ -25,6 +26,7 @@ class VehicleListItem extends Component {
         />
         <div styleName='media'>
           <Heading level={3}>{`${year} ${modelName}`}</Heading>
+          <Heading level={4} style={{ color: 'var(--black)'}}>{`${toGbp(vehiclePrice.salePrice)}`}</Heading>
           <p>
             {
               autotraderDescription.length > 0
